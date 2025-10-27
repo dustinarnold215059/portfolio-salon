@@ -28,7 +28,7 @@ const Offers = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-br from-primary-600 via-primary-500 to-secondary-600 relative overflow-hidden">
+    <section id="offers" className="py-24 bg-gradient-to-br from-primary-600 via-primary-500 to-secondary-600 relative overflow-hidden">
       {/* Background Decoration */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
