@@ -82,9 +82,9 @@ const Hero = () => {
                 transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
                 className="glass-effect p-6 rounded-2xl border border-white/20"
               >
-                <stat.icon className="h-10 w-10 text-primary-400 mx-auto mb-3" />
-                <div className="text-4xl font-bold text-white mb-2">{stat.value}</div>
-                <div className="text-gray-300 font-medium">{stat.label}</div>
+                <stat.icon className="h-10 w-10 text-rose-400 mx-auto mb-3" />
+                <div className="text-4xl font-bold bg-gradient-to-r from-rose-400 to-pink-400 bg-clip-text text-transparent mb-2">{stat.value}</div>
+                <div className="text-rose-100 font-medium">{stat.label}</div>
               </motion.div>
             ))}
           </div>
