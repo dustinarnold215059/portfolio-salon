@@ -80,11 +80,11 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-                className="glass-effect p-6 rounded-2xl border border-white/20"
+                className="bg-gradient-to-br from-rose-500/90 to-pink-500/90 backdrop-blur-md p-6 rounded-2xl border border-white/30 shadow-xl"
               >
-                <stat.icon className="h-10 w-10 text-rose-400 mx-auto mb-3" />
-                <div className="text-4xl font-bold bg-gradient-to-r from-rose-400 to-pink-400 bg-clip-text text-transparent mb-2">{stat.value}</div>
-                <div className="text-rose-100 font-medium">{stat.label}</div>
+                <stat.icon className="h-10 w-10 text-white mx-auto mb-3" />
+                <div className="text-4xl font-bold text-white mb-2">{stat.value}</div>
+                <div className="text-white/90 font-medium">{stat.label}</div>
               </motion.div>
             ))}
           </div>
