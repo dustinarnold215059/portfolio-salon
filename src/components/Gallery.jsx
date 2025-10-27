@@ -6,7 +6,7 @@ const Gallery = () => {
 
   const galleryImages = [
     {
-      url: 'https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=800&q=80',
+      url: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&q=80',
       title: 'Balayage Transformation',
       category: 'Hair Color'
     },
@@ -21,29 +21,19 @@ const Gallery = () => {
       category: 'Haircut'
     },
     {
-      url: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&q=80',
+      url: 'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=800&q=80',
       title: 'Makeup Artistry',
       category: 'Makeup'
     },
     {
-      url: 'https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=800&q=80',
-      title: 'Color Correction',
-      category: 'Hair Color'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1522337094846-8a818192de1f?w=800&q=80',
-      title: 'Beach Waves',
+      url: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80',
+      title: 'Elegant Styling',
       category: 'Styling'
     },
     {
-      url: 'https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=800&q=80',
+      url: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80',
       title: 'Nail Art',
       category: 'Nails'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1560869713-bf165a7e56e8?w=800&q=80',
-      title: 'Highlights',
-      category: 'Hair Color'
     }
   ];
 

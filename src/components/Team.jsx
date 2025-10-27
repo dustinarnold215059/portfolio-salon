@@ -7,7 +7,7 @@ const Team = () => {
       name: 'Isabella Rodriguez',
       specialty: 'Master Colorist & Hair Designer',
       experience: '12 years',
-      image: 'https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=600&q=80',
+      image: 'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=600&q=80',
       description: 'Specializes in balayage, color corrections, and editorial styling.',
     },
     {
