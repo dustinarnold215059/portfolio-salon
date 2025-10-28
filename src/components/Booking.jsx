@@ -20,6 +20,7 @@ const Booking = () => {
 
   const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const services = [
     'Haircuts & Styling',
@@ -82,22 +83,26 @@ const Booking = () => {
     e.preventDefault();
 
     if (validateForm()) {
-      // Here you would typically send the form data to your backend or EmailJS
-      console.log('Form submitted:', formData);
-      setIsSubmitted(true);
+      setIsSubmitting(true);
 
-      // Reset form after 5 seconds
+      // Simulate API call
       setTimeout(() => {
-        setIsSubmitted(false);
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          service: '',
-          date: '',
-          message: ''
-        });
-      }, 5000);
+        setIsSubmitted(true);
+        setIsSubmitting(false);
+
+        // Reset form after 5 seconds
+        setTimeout(() => {
+          setIsSubmitted(false);
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            service: '',
+            date: '',
+            message: ''
+          });
+        }, 5000);
+      }, 1000);
     }
   };
 
@@ -319,11 +324,23 @@ const Booking = () => {
                   {/* Submit Button */}
                   <motion.button
                     type="submit"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    className="w-full btn-primary"
+                    disabled={isSubmitting}
+                    whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
+                    whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
+                    className={`w-full transition-all duration-300 ${
+                      isSubmitting
+                        ? 'bg-gray-400 cursor-not-allowed py-3 px-6 rounded-lg text-white font-semibold'
+                        : 'btn-primary'
+                    }`}
                   >
-                    Submit Booking Request
+                    {isSubmitting ? (
+                      <div className="flex items-center justify-center">
+                        <div className="animate-spin rounded-full h-5 w-5 border-2 border-white border-t-transparent mr-3"></div>
+                        Submitting...
+                      </div>
+                    ) : (
+                      'Submit Booking Request'
+                    )}
                   </motion.button>
 
                   <p className="text-sm text-gray-600 text-center">
